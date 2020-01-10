@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html> <!-- This is the point at which your html document starts. -->
+
+<head>
+    <!-- Compulsory use in HTML5 for responsive UI-->
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <audio id="myAudio1">            <!-- " myaudio1" doesn't work. Explain why? (because id is CASE sensitive -->
+        <source src="../sounds/kick-bass.mp3 " />
+    </audio>
+    <audio id="myAudio2">
+        <source src="../sounds/snare.mp3 " />
+    </audio>
+    <audio id="myAudio3">
+        <source src="../sounds/tom-1.mp3 " />
+    </audio>
+
+    <!-- For the drum symbol below, use the shortcut as per your OS -->
+    <!-- Windows 10 users, use Window key and fullstop key simultaneously. Then type drums.-->
+    <!-- Apple iOS users, use CTRL + CMD + Space -->
+    <!-- Ubuntu OS users, use a right-click or Ctrl + . to trigger the emoji workspace -->
+    
+    <h1 id="title ">Drum 🥁 Kit</h1>
+    <div class="set ">
+        <button class="test1 drum " onclick="playAudio1() " type="button ">C</button>
+        <button class="test2 drum " onclick="playAudio2() " type="button ">O</button>
+        <button class="test3 drum " onclick="playAudio3() " type="button ">C</button>
+        <button class="test4 drum " onclick="display() " type="button ">Vjti</button>
+
+    </div>
+
+    <!-- The script is included at the end of the html file. This is done so as to render the scripts after the.../
+     page has loaded. No one likes an unresponsive page :( -->
+    <script type="text/javascript " src="script.js "></script>
+    <footer > Made by <img src="../images/coc.jpg" width="42" height="42">
+        CoC VJTI 
+    </footer>
+
+
+</body>
+
+</html>
